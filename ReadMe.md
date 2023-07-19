@@ -1,38 +1,12 @@
-# Test locally 
-## Build docker image
-docker build -t <\image name> .
+# API 
 
-tutorial : [here](https://towardsdatascience.com/deploy-machine-learning-web-app-on-azure-df7c2faa7fec)
 
-##  lists docker images 
-docker images
-docker ps 
-docker ps -a
+Website : 
 
-## start 
+[stackoverflowautomatictagging.azurewebsites.net](stackoverflowautomatictagging.azurewebsites.net)
 
-docker run -d -p 80:80 <\image-id>
-docker run -p 8501:8501 <\image name> 
 
-- p for --publish 
+DEPLOYMENT with : GitHub and AZUR 
 
-# exec
-docker exec -it  <\image-id> /bin/sh
+You can find a working docker image on **master** branch, the docker image is working on localhost. But the deployment was not needed as AZUR offers to deploy github project directly. I used AZUR free trial period, the project will no longer be available online after this period. 
 
-## stop 
-docker stop <\image-name>  : will not remove the image only stop 
-
-## delete images 
-
-docker rmi <\image-id>
-
-# view in html 
-http://localhost:8501
-
-## Azur 
-
-azur CLI to use azur service with command line on the terminal 
-
-azur login 
-
-azur group list #  list all resource group 
